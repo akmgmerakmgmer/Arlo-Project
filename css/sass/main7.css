@@ -1,0 +1,24 @@
+.main7 {
+  margin-top: 100px; }
+  .main7 ul {
+    margin-top: 100px; }
+    .main7 ul li span {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 14px; }
+    .main7 ul li h6 {
+      font-size: 19px;
+      font-weight: 600;
+      margin-top: 20px;
+      letter-spacing: 1.1px;
+      margin-bottom: 0; }
+    .main7 ul li img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 20px; }
+    .main7 ul li p {
+      font-size: 28px;
+      font-weight: 500; }
+
+/*# sourceMappingURL=main7.css.map */

@@ -1,0 +1,23 @@
+main    
+    padding-top: 55px
+    .main1
+        margin-bottom: 100px
+        button
+            @extend %buttons
+            box-shadow: 2px 0px 15px rgba(19,206,10,.4)
+            img 
+                width: 25px  
+                margin-right: 10px   
+        p   
+            font-size: 23px 
+            margin-top: 50px
+        h1
+            @extend %headings
+            span    
+                display: inline-block
+                position: relative
+            span::before 
+                @extend %spans
+@media (max-width: 575.98px)
+    button  
+        padding: 20px 50px !important                

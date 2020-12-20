@@ -1,0 +1,55 @@
+.main5  
+    @extend %margins
+    background: #E6E6FD
+    padding-top: 20px
+    padding-bottom: 150px
+    .spaces2
+        cursor: pointer
+        &:hover>p
+            color: #FF7236
+        p   
+            background: #F4F4F9
+            color: white
+            padding: 20px
+            color: rgba(0, 0, 0, 0.8)
+            font-weight: 400
+            letter-spacing: 1px
+            border-bottom-right-radius: 5px
+            border-bottom-left-radius: 5px
+            transition: 0.3s
+            box-shadow: 2px 0px 15px rgba(0,0,0,.4)
+        .images2    
+            height: 65vh
+            box-shadow: 2px 0px 15px rgba(0,0,0,.4)
+            margin-top: 30px
+            img 
+                object-fit: cover
+                object-position: center top
+                height: 100%
+                width: 100%
+
+
+                    
+@media (max-width: 575.98px)
+    .main5  
+        .images2
+            height: 65vh !important
+            
+
+@media (min-width: 576px) and (max-width: 767.98px)
+    .main5  
+        .images2
+            height: 70vh !important
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .main5  
+        .images2
+            height: 80vh !important
+
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+    .main5  
+        .images2
+            height: 60vh !important
+
+@media (min-width: 1200px)                            
