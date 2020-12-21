@@ -15,8 +15,8 @@ Vue.component('navbar',{
             <img src="images/logo.png" alt="Arlo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#">Main Templates</a></li>
-                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#main3">Main Templates</a></li>
+                    <li><a href="#main6">Documentation</a></li>
                 </ul>
             </nav>
             
@@ -52,7 +52,7 @@ Vue.component('main2',{
 })
 Vue.component('main3',{
   template:`
-  <section class="main3">
+  <section class="main3" id="main3">
       <div class="text-center container">
           <ul class="gallery-links">
               <li data-filter="all" class="active">All</li>
@@ -101,7 +101,7 @@ Vue.component('main5',{
 Vue.component('main6',{
   props:['services'],
   template:`
-  <section class="main6">
+  <section class="main6" id="main6">
       <h2 class="text-center">Main <span>features</span> of my design</h2>
       <div class="row text-center">
           <div class="col-lg-4 col-md-6 main6-divisions" v-for="service in services">
@@ -308,6 +308,7 @@ new Vue({
 
 
 $( document ).ready(function() {
+  
     navbar();
     gallery();
     lightslider()

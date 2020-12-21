@@ -1,198 +1,200 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif; }
-  body #app {
-    overflow: hidden; }
-    body #app header {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+  body #app, html #app {
+    overflow-x: hidden; }
+    body #app header, html #app header {
       padding-top: 35px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       padding-bottom: 20px; }
-      body #app header .wrapper {
+      body #app header .wrapper, html #app header .wrapper {
         cursor: pointer;
         display: none;
         position: absolute;
         right: -30px;
         top: 25px; }
-        body #app header .wrapper .icon {
+        body #app header .wrapper .icon, html #app header .wrapper .icon {
           position: relative;
           width: 100px;
           height: 100px; }
-          body #app header .wrapper .icon .bottom {
+          body #app header .wrapper .icon .bottom, html #app header .wrapper .icon .bottom {
             top: 38%; }
-          body #app header .wrapper .icon .center {
+          body #app header .wrapper .icon .center, html #app header .wrapper .icon .center {
             top: 28%; }
-          body #app header .wrapper .icon .top {
+          body #app header .wrapper .icon .top, html #app header .wrapper .icon .top {
             top: 18%; }
-          body #app header .wrapper .icon .line {
+          body #app header .wrapper .icon .line, html #app header .wrapper .icon .line {
             position: absolute;
             height: 5px;
             background: white;
             width: 40%;
             border-radius: 5px;
             transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s; }
-      body #app header .header {
+      body #app header .header, html #app header .header {
         display: flex;
         justify-content: space-between; }
-        body #app header .header .logo {
+        body #app header .header .logo, html #app header .header .logo {
           display: none;
           margin-left: 3%;
           height: 45px; }
-        body #app header .header nav {
+        body #app header .header nav, html #app header .header nav {
           padding-right: 3%; }
-          body #app header .header nav ul {
+          body #app header .header nav ul, html #app header .header nav ul {
             margin-right: 30px; }
-            body #app header .header nav ul li {
+            body #app header .header nav ul li, html #app header .header nav ul li {
               list-style: none;
               display: inline-block;
               margin-left: 35px; }
-              body #app header .header nav ul li a {
+              body #app header .header nav ul li a, html #app header .header nav ul li a {
                 text-decoration: none;
                 color: #333;
                 transition: 0.3s; }
-                body #app header .header nav ul li a:hover {
+                body #app header .header nav ul li a:hover, html #app header .header nav ul li a:hover {
                   color: #FF7236; }
-        body #app header .header .main-image {
+        body #app header .header .main-image, html #app header .header .main-image {
           width: 60px;
           height: 15px;
           margin-top: 6px;
           margin-left: 3%; }
     @media (max-width: 575.98px) {
-      body #app header {
+      body #app header, html #app header {
         background: #0F0F16;
         padding-bottom: 0px !important; }
-        body #app header .wrapper {
+        body #app header .wrapper, html #app header .wrapper {
           display: inline-block !important; }
-        body #app header .header {
+        body #app header .header, html #app header .header {
           display: block !important; }
-          body #app header .header .main-image {
+          body #app header .header .main-image, html #app header .header .main-image {
             display: none; }
-          body #app header .header .logo {
+          body #app header .header .logo, html #app header .header .logo {
             display: block !important; }
-          body #app header .header img {
+          body #app header .header img, html #app header .header img {
             margin-bottom: 30px; }
-          body #app header .header nav {
+          body #app header .header nav, html #app header .header nav {
             background: #090909;
             margin-top: 20px;
             transform: translateX(-300%);
             height: 0px;
             padding: 0 0 0 3%;
             transition: 0.35s !important; }
-            body #app header .header nav ul {
+            body #app header .header nav ul, html #app header .header nav ul {
               margin-left: -75px;
               padding-top: 20px; }
-              body #app header .header nav ul li {
+              body #app header .header nav ul li, html #app header .header nav ul li {
                 display: block !important;
                 margin-top: 10px;
                 letter-spacing: 1.2px;
                 font-size: 18px; }
-                body #app header .header nav ul li a {
+                body #app header .header nav ul li a, html #app header .header nav ul li a {
                   color: white !important; }
-                  body #app header .header nav ul li a:hover {
+                  body #app header .header nav ul li a:hover, html #app header .header nav ul li a:hover {
                     color: #FF7236 !important; } }
     @media (min-width: 576px) and (max-width: 767.98px) {
-      body #app header {
+      body #app header, html #app header {
         background: #0F0F16;
         padding-bottom: 0 !important; }
-        body #app header .wrapper {
+        body #app header .wrapper, html #app header .wrapper {
           display: inline-block !important; }
-        body #app header .header {
+        body #app header .header, html #app header .header {
           display: block !important; }
-          body #app header .header .main-image {
+          body #app header .header .main-image, html #app header .header .main-image {
             display: none; }
-          body #app header .header .logo {
+          body #app header .header .logo, html #app header .header .logo {
             display: block !important; }
-          body #app header .header img {
+          body #app header .header img, html #app header .header img {
             margin-bottom: 30px; }
-          body #app header .header nav {
+          body #app header .header nav, html #app header .header nav {
             background: #090909;
             margin-top: 20px;
             transform: translateX(-100%);
             height: 0px;
             padding: 0 0 0 3%;
             transition: 0.3s; }
-            body #app header .header nav ul {
+            body #app header .header nav ul, html #app header .header nav ul {
               margin-left: -75px;
               padding-top: 20px; }
-              body #app header .header nav ul li {
+              body #app header .header nav ul li, html #app header .header nav ul li {
                 display: block !important;
                 margin-top: 10px;
                 letter-spacing: 1.2px;
                 font-size: 18px; }
-                body #app header .header nav ul li a {
+                body #app header .header nav ul li a, html #app header .header nav ul li a {
                   color: white !important; }
-                  body #app header .header nav ul li a:hover {
+                  body #app header .header nav ul li a:hover, html #app header .header nav ul li a:hover {
                     color: #FF7236 !important; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
-      body #app header {
+      body #app header, html #app header {
         background: #0F0F16;
         padding-bottom: 0 !important; }
-        body #app header .wrapper {
+        body #app header .wrapper, html #app header .wrapper {
           display: inline-block !important; }
-        body #app header .header {
+        body #app header .header, html #app header .header {
           display: block !important; }
-          body #app header .header .main-image {
+          body #app header .header .main-image, html #app header .header .main-image {
             display: none; }
-          body #app header .header .logo {
+          body #app header .header .logo, html #app header .header .logo {
             display: block !important; }
-          body #app header .header img {
+          body #app header .header img, html #app header .header img {
             margin-bottom: 30px; }
-          body #app header .header nav {
+          body #app header .header nav, html #app header .header nav {
             background: #090909;
             margin-top: 20px;
             transform: translateX(-100%);
             height: 0px;
             padding: 0 0 0 3%;
             transition: 0.3s; }
-            body #app header .header nav ul {
+            body #app header .header nav ul, html #app header .header nav ul {
               margin-left: -75px;
               padding-top: 20px; }
-              body #app header .header nav ul li {
+              body #app header .header nav ul li, html #app header .header nav ul li {
                 display: block !important;
                 margin-top: 10px;
                 letter-spacing: 1.2px;
                 font-size: 18px; }
-                body #app header .header nav ul li a {
+                body #app header .header nav ul li a, html #app header .header nav ul li a {
                   color: white !important; }
-                  body #app header .header nav ul li a:hover {
+                  body #app header .header nav ul li a:hover, html #app header .header nav ul li a:hover {
                     color: #FF7236 !important; } }
-    body #app main {
+    body #app main, html #app main {
       padding-top: 55px; }
-      body #app main .main1 {
+      body #app main .main1, html #app main .main1 {
         margin-bottom: 100px; }
-        body #app main .main1 button {
+        body #app main .main1 button, html #app main .main1 button {
           box-shadow: 2px 0px 15px rgba(19, 206, 10, 0.4); }
-          body #app main .main1 button img {
+          body #app main .main1 button img, html #app main .main1 button img {
             width: 25px;
             margin-right: 10px; }
-        body #app main .main1 p {
+        body #app main .main1 p, html #app main .main1 p {
           font-size: 23px;
           margin-top: 50px; }
-        body #app main .main1 h1 span {
+        body #app main .main1 h1 span, html #app main .main1 h1 span {
           display: inline-block;
           position: relative; }
     @media (max-width: 575.98px) {
-      body #app button {
+      body #app button, html #app button {
         padding: 20px 50px !important; } }
-    body #app .main2 {
+    body #app .main2, html #app .main2 {
       background: #E6E6FD;
       padding-top: 80px;
       padding-bottom: 20px; }
-      body #app .main2 p {
+      body #app .main2 p, html #app .main2 p {
         font-size: 23px;
         margin-top: 20px; }
-      body #app .main2 h2 {
+      body #app .main2 h2, html #app .main2 h2 {
         font-family: "Caveat", cursive;
         font-size: 68px;
         font-weight: 700; }
-    body #app .main3 {
+    body #app .main3, html #app .main3 {
       background: #1B1D26;
       padding-top: 40px;
       padding-bottom: 30px; }
-      body #app .main3 ul .active {
+      body #app .main3 ul .active, html #app .main3 ul .active {
         color: #FF7236; }
-      body #app .main3 ul li {
+      body #app .main3 ul li, html #app .main3 ul li {
         display: inline-block;
         color: rgba(255, 255, 255, 0.9);
         cursor: pointer;
@@ -200,19 +202,19 @@ body {
         transition: 0.3s;
         margin-top: 10px;
         font-weight: 500; }
-        body #app .main3 ul li:hover {
+        body #app .main3 ul li:hover, html #app .main3 ul li:hover {
           color: #FF7236; }
-    body #app .main4 {
+    body #app .main4, html #app .main4 {
       background: #14161E;
       padding-top: 40px;
       padding-bottom: 100px; }
-      body #app .main4 .spaces {
+      body #app .main4 .spaces, html #app .main4 .spaces {
         margin-top: 10px;
         padding-left: 10px;
         cursor: pointer; }
-        body #app .main4 .spaces:hover > p {
+        body #app .main4 .spaces:hover > p, html #app .main4 .spaces:hover > p {
           color: #FF7236; }
-        body #app .main4 .spaces p {
+        body #app .main4 .spaces p, html #app .main4 .spaces p {
           background: #1B1D26;
           color: white;
           padding: 20px;
@@ -223,37 +225,37 @@ body {
           border-bottom-left-radius: 5px;
           transition: 0.3s;
           box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.4); }
-        body #app .main4 .spaces .images {
+        body #app .main4 .spaces .images, html #app .main4 .spaces .images {
           overflow: hidden;
           border-radius: 5px;
           height: 30vh;
           box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.4); }
-          body #app .main4 .spaces .images img {
+          body #app .main4 .spaces .images img, html #app .main4 .spaces .images img {
             height: 100%;
             width: 100%;
             object-fit: cover;
             object-position: center top; }
     @media (max-width: 575.98px) {
-      body #app .main4 .spaces .images {
+      body #app .main4 .spaces .images, html #app .main4 .spaces .images {
         height: 40vh !important; } }
     @media (min-width: 576px) and (max-width: 767.98px) {
-      body #app .main4 .spaces .images {
+      body #app .main4 .spaces .images, html #app .main4 .spaces .images {
         height: 50vh !important; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
-      body #app .main4 .spaces .images {
+      body #app .main4 .spaces .images, html #app .main4 .spaces .images {
         height: 32vh !important; } }
     @media (min-width: 992px) and (max-width: 1199.98px) {
-      body #app .main4 .spaces .images {
+      body #app .main4 .spaces .images, html #app .main4 .spaces .images {
         height: 25vh !important; } }
-    body #app .main5 {
+    body #app .main5, html #app .main5 {
       background: #E6E6FD;
       padding-top: 20px;
       padding-bottom: 150px; }
-      body #app .main5 .spaces2 {
+      body #app .main5 .spaces2, html #app .main5 .spaces2 {
         cursor: pointer; }
-        body #app .main5 .spaces2:hover > p {
+        body #app .main5 .spaces2:hover > p, html #app .main5 .spaces2:hover > p {
           color: #FF7236; }
-        body #app .main5 .spaces2 p {
+        body #app .main5 .spaces2 p, html #app .main5 .spaces2 p {
           background: #F4F4F9;
           color: white;
           padding: 20px;
@@ -264,106 +266,108 @@ body {
           border-bottom-left-radius: 5px;
           transition: 0.3s;
           box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.4); }
-        body #app .main5 .spaces2 .images2 {
+        body #app .main5 .spaces2 .images2, html #app .main5 .spaces2 .images2 {
           height: 65vh;
           box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.4);
           margin-top: 30px; }
-          body #app .main5 .spaces2 .images2 img {
+          body #app .main5 .spaces2 .images2 img, html #app .main5 .spaces2 .images2 img {
             object-fit: cover;
             object-position: center top;
             height: 100%;
             width: 100%; }
     @media (max-width: 575.98px) {
-      body #app .main5 .images2 {
+      body #app .main5 .images2, html #app .main5 .images2 {
         height: 65vh !important; } }
     @media (min-width: 576px) and (max-width: 767.98px) {
-      body #app .main5 .images2 {
+      body #app .main5 .images2, html #app .main5 .images2 {
         height: 70vh !important; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
-      body #app .main5 .images2 {
+      body #app .main5 .images2, html #app .main5 .images2 {
         height: 80vh !important; } }
     @media (min-width: 992px) and (max-width: 1199.98px) {
-      body #app .main5 .images2 {
+      body #app .main5 .images2, html #app .main5 .images2 {
         height: 60vh !important; } }
-    body #app .main6 {
-      margin-top: 150px;
+    body #app .main6, html #app .main6 {
+      padding-top: 150px;
       margin-bottom: 10px; }
-      body #app .main6 h2 {
+      body #app .main6 h2, html #app .main6 h2 {
         margin-bottom: 50px; }
-        body #app .main6 h2 span {
+        body #app .main6 h2 span, html #app .main6 h2 span {
           display: inline-block;
           position: relative; }
-      body #app .main6 .main6-divisions .hvr-underline-from-center:before {
+      body #app .main6 .main6-divisions .hvr-underline-from-center:before, html #app .main6 .main6-divisions .hvr-underline-from-center:before {
         background: #ff152a;
         transition: 0.6s; }
-      body #app .main6 .main6-divisions div {
+      body #app .main6 .main6-divisions div, html #app .main6 .main6-divisions div {
         border: 1px solid #e4e4e4;
         width: 100%;
         padding: 55px 20px;
         border-radius: 10px;
         margin-top: 20px; }
-        body #app .main6 .main6-divisions div h5 {
+        body #app .main6 .main6-divisions div h5, html #app .main6 .main6-divisions div h5 {
           margin-top: 20px;
           font-size: 20px;
           font-weight: 400;
           letter-spacing: 1.2px;
           color: rgba(0, 0, 0, 0.8); }
-        body #app .main6 .main6-divisions div i {
+        body #app .main6 .main6-divisions div i, html #app .main6 .main6-divisions div i {
           color: #ff152a;
           font-size: 40px; }
-    body #app .main7 {
-      margin-top: 100px; }
-      body #app .main7 ul {
+    body #app .main7, html #app .main7 {
+      margin-top: 100px;
+      overflow-x: hidden; }
+      body #app .main7 ul, html #app .main7 ul {
         margin-top: 100px; }
-        body #app .main7 ul li span {
+        body #app .main7 ul li span, html #app .main7 ul li span {
           color: rgba(0, 0, 0, 0.8);
           font-size: 14px; }
-        body #app .main7 ul li h6 {
+        body #app .main7 ul li h6, html #app .main7 ul li h6 {
           font-size: 19px;
           font-weight: 600;
           margin-top: 20px;
           letter-spacing: 1.1px;
           margin-bottom: 0; }
-        body #app .main7 ul li img {
+        body #app .main7 ul li img, html #app .main7 ul li img {
           width: 80px;
           height: 80px;
           object-fit: cover;
           border-radius: 50%;
           margin-top: 20px; }
-        body #app .main7 ul li p {
+        body #app .main7 ul li p, html #app .main7 ul li p {
           font-size: 28px;
           font-weight: 500; }
-    body #app footer {
+    body #app footer, html #app footer {
       margin-top: 150px;
       padding-top: 150px;
       background: #14161E;
-      padding-bottom: 150px; }
-      body #app footer button img {
+      padding-bottom: 150px;
+      overflow-x: hidden; }
+      body #app footer button img, html #app footer button img {
         width: 25px;
         margin-right: 10px; }
-      body #app footer p {
+      body #app footer p, html #app footer p {
         color: rgba(255, 255, 255, 0.9);
         font-size: 48px;
         font-weight: 500;
         margin-bottom: 30px; }
-        body #app footer p span {
+        body #app footer p span, html #app footer p span {
           color: #28A823; }
     @media (max-width: 575.98px) {
-      body #app footer p {
+      body #app footer p, html #app footer p {
         font-size: 36px !important; }
-      body #app footer button {
+      body #app footer button, html #app footer button {
         padding: 20px 50px !important; } }
     @media (min-width: 576px) and (max-width: 767.98px) {
-      body #app footer p {
+      body #app footer p, html #app footer p {
         font-size: 36px !important; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
-      body #app footer p {
+      body #app footer p, html #app footer p {
         font-size: 42px !important; } }
     @media (min-width: 992px) and (max-width: 1199.98px) {
-      body #app footer p {
+      body #app footer p, html #app footer p {
         font-size: 44px !important; } }
     @media (min-width: 1200px) {
-      body #app footer p {
+      body #app footer p, html #app footer p {
         margin-left: 10%;
         margin-right: 10%; } }
 
@@ -379,11 +383,11 @@ body {
   transform: translateX(0%) !important;
   height: 130px !important; }
 
-body #app .main4, body #app .main5, body #app .main6 {
+body #app .main4, html #app .main4, body #app .main5, html #app .main5, body #app .main6, html #app .main6 {
   padding-left: 3%;
   padding-right: 3%; }
 
-body #app main .main1 button, body #app footer button {
+body #app main .main1 button, html #app main .main1 button, body #app footer button, html #app footer button {
   background: #348F30;
   padding: 20px 90px;
   border: none;
@@ -393,15 +397,15 @@ body #app main .main1 button, body #app footer button {
   font-weight: 600;
   margin-top: 20px;
   transition: 0.3s; }
-  body #app main .main1 button:hover, body #app footer button:hover {
+  body #app main .main1 button:hover, html #app main .main1 button:hover, body #app footer button:hover, html #app footer button:hover {
     background: #1074E7; }
 
-body #app main .main1 h1, body #app .main6 h2 {
+body #app main .main1 h1, html #app main .main1 h1, body #app .main6 h2, html #app .main6 h2 {
   font-weight: 600;
   font-size: 48px;
   margin-top: 50px; }
 
-body #app main .main1 h1 span::before, body #app .main6 h2 span::before {
+body #app main .main1 h1 span::before, html #app main .main1 h1 span::before, body #app .main6 h2 span::before, html #app .main6 h2 span::before {
   position: absolute;
   content: "";
   left: 0px;

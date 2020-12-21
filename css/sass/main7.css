@@ -1,5 +1,6 @@
 .main7 {
-  margin-top: 100px; }
+  margin-top: 100px;
+  overflow-x: hidden; }
   .main7 ul {
     margin-top: 100px; }
     .main7 ul li span {
