@@ -276,19 +276,19 @@ new Vue({
       ],
       slides:[
         {
-          paragraph:"This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price. I'm very pleased with this purchase.",
+          paragraph:"This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price.",
           image:"images/28.jpg",
           head:"Albert Walkers",
           span:"Seo of Gogomedia",
         },
         {
-          paragraph:"This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price. I'm very pleased with this purchase.",
+          paragraph:"This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price.",
           image:"images/31.jpg",
           head:"Michael Barbera",
           span:"Photographer",
         },
         {
-          paragraph:"This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price. I'm very pleased with this purchase",
+          paragraph:"This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price.",
           image:"images/32.jpg",
           head:"Dani Atkins",
           span:"Customer",
@@ -304,30 +304,32 @@ new Vue({
 
 
 
-
-
+$(window).on("load",function(){ 
+  $('body,html').css('height','100vh');
+  $("#loading").fadeOut();
+  $("#loading").remove;
+});
 
 $( document ).ready(function() {
-  
     navbar();
     gallery();
-    lightslider()
+    lightslider();
     var containerEl = document.querySelector('.mixitup2');
-    var mixer = mixitup(containerEl);
-   
-    
+    var mixer = mixitup(containerEl);  
 });
 
 function navbar(){
   $(".wrapper").click(function(){
     $(".icon").toggleClass("close");
-    $(".header nav").toggleClass("display");
+    $(".header nav").slideToggle(400);
     
   });
   $(window).resize(function() {
     if($(window).width()>991.98){
-      $(".header nav").removeClass("display");
       $(".icon").removeClass("close");
+      $(".header nav").show();
+    }else{
+      $(".header nav").hide();
     }
   });
 }
@@ -338,6 +340,8 @@ function gallery(){
 
   })
 }
+
+
 function lightslider(){
     $("#lightSlider").lightSlider({
       item: 1,
