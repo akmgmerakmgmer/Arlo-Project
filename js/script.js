@@ -11,7 +11,7 @@ Vue.component('navbar',{
             </div>
         </div>
         <div class="header">
-            <img src="https://arlo.frenify.com/demos/intro/wp-content/themes/arlo/framework/img/lines-custom-logo.png" class="main-image" alt="">
+            <img src="images/travel-logo.png" class="main-image" alt="">
             <img src="images/logo.png" alt="Arlo" class="logo">
             <nav>
                 <ul>
